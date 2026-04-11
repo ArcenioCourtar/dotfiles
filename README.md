@@ -6,7 +6,6 @@ Ideally you use symlinks to get all the dotfiles in the right place, so you can 
 I might add a tutorial on how to do this later if I feel like it.
 
 TODO:
-- [ ] Configure tmux continuum to actually do the periodic saving. I currently need to save sessions manually.
-- [ ] Add more nvim plugins
-- [ ] Tweak nvim and tmux keybinds
-- [ ] (not visible in repo) relearn how to use symlinks lol
+-[ ] customize OhMyZsh config (file descriptor stuff)
+-[ ] some more nvim tweaks
+-[ ] write script (or find another method) that puts all symlinks in the right places when working on a new system
