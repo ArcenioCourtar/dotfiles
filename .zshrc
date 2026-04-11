@@ -1,3 +1,6 @@
+# This is just the default ohmyzsh comes with
+# I'm intending on making some changes in the near future
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
