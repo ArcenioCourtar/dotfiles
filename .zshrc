@@ -2,6 +2,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export EDITOR="nvim"
 
+
 ZSH_CUSTOM=$HOME/.zshcustom
 ZSH_THEME="mytotallyoriginaltheme"
 
@@ -9,6 +10,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+unsetopt autocd
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
