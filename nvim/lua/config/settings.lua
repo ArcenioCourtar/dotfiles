@@ -13,7 +13,7 @@ o.swapfile = false -- disable swapfiles. I'm sure this will never backfire :>
 o.colorcolumn = "81" -- add colored line after 80 characters, used as a reference to not create lines that are too long
 o.showmatch = true -- briefly flash matching bracket when closing brackets
 o.list = true
-o.listchars:append({ tab = '→→', trail = '◦' }) -- display certain whitespace characters
+o.listchars:append({ tab = '  |', trail = '◦' }) -- display certain whitespace characters
 o.clipboard = "unnamedplus" -- paste buffer == system clipboard
 
 g.mapleader = " "	-- I forgot what these do lol
