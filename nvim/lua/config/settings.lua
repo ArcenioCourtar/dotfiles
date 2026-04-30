@@ -1,6 +1,20 @@
 -- Make sure to setup `mapleader` and `maplocalleader` before
 -- loading lazy.nvim so that mappings are correct.
 -- This is also a good place to setup other settings (vim.opt)
+local o = vim.opt
+local g = vim.g
 
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
+o.shiftwidth = 4	-- spaces inserted with automated tab spacing
+o.tabstop = 4	-- spaces inserted when manually pressing tab
+o.number = true	-- display line numbers when editing files
+o.relativenumber = true -- display distance of surrounding lines relative to current
+o.ruler = true -- display line and column of cursor position (I''m pretty sure this is true by default?)
+o.swapfile = false -- disable swapfiles. I'm sure this will never backfire :>
+o.colorcolumn = "81" -- add colored line after 80 characters, used as a reference to not create lines that are too long
+o.showmatch = true -- briefly flash matching bracket when closing brackets
+o.list = true
+o.listchars:append({ tab = '→→', trail = '◦' }) -- display certain whitespace characters
+o.clipboard = "unnamedplus" -- paste buffer == system clipboard
+
+g.mapleader = " "	-- I forgot what these do lol
+g.maplocalleader = "\\"
