@@ -16,5 +16,9 @@ o.list = true
 o.listchars:append({ tab = '  |', trail = '◦' }) -- display certain whitespace characters
 o.clipboard = "unnamedplus" -- paste buffer == system clipboard
 
-g.mapleader = " "	-- I forgot what these do lol
+vim.diagnostic.config({
+	virtual_text = true
+})
+
+g.mapleader = " " -- now I need to use it for trouble.nvim I remember what this is for
 g.maplocalleader = "\\"
