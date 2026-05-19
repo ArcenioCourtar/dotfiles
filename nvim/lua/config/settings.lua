@@ -4,6 +4,7 @@
 local o = vim.opt
 local g = vim.g
 
+o.mouse = ""
 o.shiftwidth = 4	-- spaces inserted with automated tab spacing
 o.tabstop = 4	-- spaces inserted when manually pressing tab
 o.number = true	-- display line numbers when editing files
