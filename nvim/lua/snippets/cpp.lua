@@ -1,13 +1,11 @@
 return {
 	s({trig = "ocf header", snippetType = "snippet", desc = "boilerplate for orthodox canonical form" }, f(function(args, snip)
 		local res, env = {}, snip.env
-		local guard = env.TM_FILENAME:upper():gsub("%.", "_")
 		local class = env.TM_FILENAME:gsub("^%l", string.upper):gsub("%..*$", "")
 		local nl = function(str)
 			table.insert(res, str)
 		end
-		nl("#ifndef " .. guard)
-		nl("# define " .. guard)
+		nl("#pragma once")
 		nl("class	" .. class .. " {")
 		nl("public:")
 		nl("	" .. class .. "();")
@@ -19,7 +17,6 @@ return {
 		nl("protected:")
 		nl("};")
 		nl("")
-		nl("#endif // " .. guard)
 		return res
 	end)),
 	s({trig = "ocf body", snippetType = "snippet", desc = "boilerplate for orthodox canonical form" }, {f(function(args, snip)
@@ -59,7 +56,7 @@ return {
 		t({
 			'#include <iostream>',
 			'',
-			'auto	main([[maybe_unused]] int ac, [[maybe_unused]] char **av) -> int {',
+			'int main([[maybe_unused]] int argc, [[maybe_unused]] char **argv) {',
 			'	std::cout << "Hello, World!\\n";',
 			'',
 			'	return 0;',
