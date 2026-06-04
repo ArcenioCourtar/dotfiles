@@ -16,6 +16,7 @@ o.showmatch = true -- briefly flash matching bracket when closing brackets
 o.list = true
 o.listchars:append({ tab = '  |', trail = '◦' }) -- display certain whitespace characters
 o.clipboard = "unnamedplus" -- paste buffer == system clipboard
+o.scrolloff = 5 -- always display some lines above/below cursor
 
 vim.diagnostic.config({
 	virtual_text = true
