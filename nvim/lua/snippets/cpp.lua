@@ -27,7 +27,6 @@ return {
 			table.insert(res, str)
 		end
 		nl("#include <iostream>")
-		nl("")
 		nl("#include \"" .. class .. ".hpp\"")
 		nl("")
 		nl(class .. "::" .. class .. "() {")
