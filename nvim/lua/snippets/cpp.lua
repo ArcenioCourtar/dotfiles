@@ -6,6 +6,7 @@ return {
 			table.insert(res, str)
 		end
 		nl("#pragma once")
+		nl("")
 		nl("class	" .. class .. " {")
 		nl("public:")
 		nl("	" .. class .. "();")
