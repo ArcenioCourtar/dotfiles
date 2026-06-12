@@ -17,7 +17,7 @@ o.list = true
 o.listchars:append({ tab = '  |', trail = '◦' }) -- display certain whitespace characters
 o.clipboard = "unnamedplus" -- paste buffer == system clipboard
 o.scrolloff = 5 -- always display some lines above/below cursor
-
+o.statusline= "%<%f %h%w%m%r %=%{% &showcmdloc == 'statusline' ? '%-10.S ' : '' %}%{% exists('b:keymap_name') ? '<'..b:keymap_name..'> ' : '' %}%{% &busy > 0 ? '◐ ' : '' %}%{% luaeval('(package.loaded[''vim.diagnostic''] and vim.diagnostic.status() .. '' '') or '''' ') %}%{% &ruler ? ( &rulerformat == '' ? '%-14.(%l/%L,%c%V%) %P' : &rulerformat ) : '' %}"
 vim.diagnostic.config({
 	virtual_text = true
 })
